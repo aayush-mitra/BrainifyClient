@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&family=Teko:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Pacifico&family=Raleway&family=Teko:wght@300&display=swap');
+
+:root {
+    --background-color: #100f11;
+    --secondary-background-color: #2E2B31;
+    --title: #E87E98;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Mukta', sans-serif;
+}
+
+.body {
+    background-color: var(--background-color);
+}
+
+header {
+    height: 100px;
+    background-color: var(--title);
+    z-index: 10;
+}
+
+.wrapper a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+/* main */
+
+main {
+    width: 100%;
+    height: calc(100vh - 100px);
+    display: flex;
+    justify-content: center;
+    overflow-y: auto;
+    color: white;
+}
+
+main .wrapper {
+    /* width: 1000px; */
+}
+
+.wrapper h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.wrapper h1 {
+    font-weight: 300;
+}
+
+.wrapper .lists {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    padding-bottom: 50px;
+}
+
+.wrapper .list {
+    /* border: 1px solid white; */
+    width: 300px;
+    height: 150px;
+    background-color: var(--secondary-background-color);
+
+}
+
+.list:hover {
+    background-color: var(--title);
+
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.list div {
+    background-color: var(--secondary-background-color);
+    height: calc(100% - 10px);
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.list section {
+    display: flex;
+    
+    
+}
+
+.list h3 {
+    font-weight: 300;
+    padding: 10px;
+}
+
+.list p:nth-child(2) {
+    color: rgb(153, 153, 153);
+}
+
+.list p {
+    padding: 10px;
+}
+
+#new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new span {
+    font-size: 100px;
+    font-weight: 500;
+    
+}
+
+.author a:hover {
+    text-decoration: underline;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-background-color);
+    border-radius: 5px;
+}

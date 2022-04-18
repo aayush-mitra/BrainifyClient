@@ -1,0 +1,36 @@
+nav {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    
+}
+
+.nav-list div {
+    margin: 10px;
+}
+
+.nav-list div:hover {
+    cursor: pointer
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+}
+
+nav h1 {
+    font-weight: 400;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+}
+
+nav h1:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="list.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Brainify</title>
+</head>
+<body> 
+    <header>
+        <nav>
+            <h1>Brainify</h1>
+            <div class="nav-list">
+                <div><a href="#">Home</a></div>
+                <div><a href="#">Profile</a></div>
+                <div><a href="#">Logout</a></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="list-wrapper">
+    	<div class="list-title"><h1>Biotechnology Unit 1</h1><p>Aayush Mitra</p></div>
+    	<div class="list-container">
+	    	<aside class="list-sidebar">
+	    		<div class="option"><i class="material-icons">view_carousel</i>Study</div>
+	    		<div class="option"><i class="material-icons">quiz</i>Quiz</div>
+	    		<div class="option"><i class="material-icons">edit</i>Edit</div>
+	    	</aside>
+	    	<section class="list-main" style="display: none;">
+	    		<div class="card">
+	    			<div class="card_inner">
+	    				<div class="card_face front">
+	    					<div class="term">
+	    						ELISA
+
+	    					</div>
+	    				</div>
+	    				<div class="card_face back">
+	    					<div class="definition">
+	    						Enzyme Linked Immunosorbent Assay
+	    					</div>
+	    				</div>
+	    			</div>
+	    		</div>
+	    		<div class="navigator">
+	    			<p><i class="material-icons backward">arrow_back</i>1/4<i class="material-icons forward">arrow_forward</i></p>
+	    		</div>
+	    	</section>
+	    	<section class="list-main">
+	    		<div class="quiz">
+	    			<div class="quiz-question">Procedure used to separate and analyze DNA fragments by placing a mixture of DNA fragments at one end of a porous gel and applying an electrical voltage to the gel.</div>
+	    			<div class="choices">
+	    				<div class="choice" id="choice1">ELISA</div>
+	    				<div class="choice" id="choice2">Recombinant DNA (rDNA)</div>
+	    				<div class="choice" id="choice3">Genetic Engineering</div>
+	    				<div class="choice" id="choice4">DNA Gel Electrophoresis</div>
+	    			</div>
+	    		</div>
+	    	</section>
+	    	
+    	</div>
+    	<section class="about">
+    			<div class="info">
+	    			<h3>Author: Aayush Mitra</h3>
+	    			<p>This list is a list about lists that is used for lists</p>
+	    		</div>
+	    		<div class="share">
+	    			<div title="Copy Link">
+	    			<i class="material-icons" >content_copy</i>
+	    			</div>
+	    			<div title="Download JSON File">
+	    			<i class="material-icons">file_download</i>
+	    			</div>
+	    		</div>
+	    </section>
+    </div>
+    <div class="list-of-terms">
+    	<h2>Terms/Definitions</h2>
+    	<div class="term-card">
+    		<div class="list-term-part">ELISA</div>
+    		<div class="list-definition-part">Enzyme Linked Immunosorbent Assay</div>
+    	</div>
+    	<div class="term-card">
+    		<div class="list-term-part">Recombinant DNA (rDNA)</div>
+    		<div class="list-definition-part">DNA sequence that was manufactured by inserting genes from another species</div>
+    	</div>
+    	<div class="term-card">
+    		<div class="list-term-part">Genetic Engineering</div>
+    		<div class="list-definition-part">The process of making changes in the DNA code of living organisms</div>
+    	</div>
+    	<div class="term-card">
+    		<div class="list-term-part">DNA Gel Electrophoresis</div>
+    		<div class="list-definition-part">Procedure used to separate and analyze DNA fragments by placing a mixture of DNA fragments at one end of a porous gel and applying an electrical voltage to the gel. </div>
+    	</div>
+    </div>
+
+    <script type="text/javascript">
+    	const card = document.querySelectorAll('.card_inner')[0]
+
+    	document.querySelectorAll(".card_inner")[0].addEventListener("click", (e) => document.querySelectorAll(".card_inner")[0].classList.toggle('is-flipped'))
+
+    	document.querySelectorAll('.forward')[0].addEventListener('click', (e) => {
+    		card.classList.add('switch')
+    		setTimeout(() => card.classList.remove('switch'), 500)
+    	})
+    </script>
+</body>
+</html>
